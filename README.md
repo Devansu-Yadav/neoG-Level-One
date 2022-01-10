@@ -1,2 +1,2 @@
 # neoG-Level-One
-neoGcamp Level One - My blogs, notes, code, and other resources.
+neoGcamp Level One - My blogs, notes, code exercises, and other resources.
