@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto,sans-serif;
+}
+
+:root {
+    --white: #fff;
+    --black: #000000;
+    --card-txt-color: #0000008A;
+    --primary-btn-color: #6200ee;
+    --action-btns-color: #00000099;
+    --inner-card-hover-color: #000;
+    --img-container-hover-color: #f7f7f7;
+    --page-bg-color: #Eaf4fc;
+    --button-hover-color: #E5E4E2;
+    --bg-hover-color: var(--button-hover-color);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+button {
+    border: none;
+    font-size: 1.6rem;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+button:hover {
+    background-color: var(--button-hover-color);
+}
+
+.header-letter-spacing {
+    letter-spacing: 0.0125em;
+}
+
+.text-content-letter-spacing {
+    letter-spacing: 0.0178571429em;
+}
+
+.heading-1 {
+    font-size: 2.4rem;
+    font-weight: 900;
+}
+
+.heading-2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.heading-3 {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.imgs {
+    object-fit: contain;
+    width: 100%;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 2rem 2rem;
+    min-height: 900px;
+    padding: 3rem;
+    background-color: var(--page-bg-color);
+}
+
+.page-grid-layout .card-with-text-over-media, .page-grid-layout .card-with-header-above-media, .page-grid-layout .card-with-header-below-media-no-btns {
+    box-shadow: 2px 5px 5px var(--button-hover-color);
+    border-radius: 5px;
+}
+
+/* ----------------------> Card With Text Over Media layout <------------------------------- */
+
+.card-with-text-over-media {
+    width: 350px;
+    flex-direction: column;
+    justify-content: center;
+    align-self: flex-start;
+    background-color: var(--white);
+}
+
+.img-card-content:hover {
+    background-color: var(--img-container-hover-color);
+    opacity: 0.93;
+}
+
+.img-container {
+    width: 100%;
+    position: relative;
+}
+
+.img-container .txt-over-img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 1rem;
+}
+
+.txt-over-img h2, .txt-over-img h3 {
+    color: var(--white);
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.card-content {
+    font-size: 1.4rem;
+    color: var(--card-txt-color);
+    padding: 1rem;
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-actions {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.read-bkmark-actions #read-btn, #bookmark-btn {
+    color: var(--primary-btn-color);
+    padding: 0.5rem 1rem;
+    margin-left: 0.5rem;
+    border-radius: 5px;
+}
+
+.like-share-more-actions button {
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+/* ----------------------------------------> Card with header above Media layout <---------------------- */
+
+.card-with-header-above-media {
+    width: 350px;
+    flex-direction: column;
+    justify-content: center;
+    align-self: flex-start;
+    background-color: var(--white);
+}
+
+.img-card-content-top-header .img-container-for-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.img-container-for-header .heading-above-img {
+    padding: 1rem;
+}
+
+.img-card-content-top-header:hover .img-container-for-header .imgs, .img-card-content-top-header:hover .card-content {
+    background-color: var(--img-container-hover-color);
+    opacity: 0.93;
+}
+
+.heading-above-img h2 {
+    color: var(--black);
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.heading-above-img h3 {
+    color: var(--card-txt-color);
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+/* ------------------------> Card with Only Buttons No reaction icons <---------------------- */
+.card-with-header-below-media-no-btns {
+    width: 350px;
+    flex-direction: column;
+    justify-content: center;
+    align-self: flex-start;
+    background-color: var(--white);
+}
+
+.img-card-content-header-below .img-container-for-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.img-container-for-header .heading-below-img {
+    padding: 1rem;
+}
+
+.img-card-content-header-below:hover  {
+    background-color: var(--img-container-hover-color);
+    opacity: 0.93;
+}
+
+.heading-below-img h2 {
+    color: var(--black);
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.heading-below-img h3 {
+    color: var(--card-txt-color);
+    /* margin-bottom: 0.5rem; */
+    margin-left: 0.5rem;
+}
+
+.card-with-header-below-media-no-btns .card-actions .like-share-more-actions {
+    display: none;
+}
+
+.card-with-header-below-media-no-btns .card-actions .read-bkmark-actions {
+    padding-bottom: 0.5rem;
+}
+
+/* -------------------------> Card with Only Reaction icons and No buttons <--------------------------- */
+.card-with-header-below-media-icons-no-btns .card-actions .read-bkmark-actions {
+    display: none;
+}
+
+.card-with-header-below-media-icons-no-btns .card-actions {
+    justify-content: flex-end;
+}
+
+.card-with-header-below-media-icons-no-btns .card-actions .like-share-more-actions {
+    display: flex;
+}
+
+/* --------------------> Card with Horizontal Img and Text <-------------------- */
+.card-with-horizontal-img-text .img-card-content-top-header .card-content {
+    display: none;
+}
+
+.card-with-horizontal-img-text .img-container-for-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.card-with-horizontal-img-text .img-container-for-header .imgs {
+    max-width: 35%;
+    height: 100%;
+}
+
+.card-with-horizontal-img-text .img-container-for-header .heading-above-img {
+    flex-grow: 1;
+    margin-left: 1rem;
+}
+
+@media screen and (max-width: 380px) {
+    button {
+        font-size: 1.4rem;    
+    }
+
+    .like-share-more-actions button {
+        padding: 0.5rem;
+    }
+
+    .card-with-text-over-media, .card-with-header-above-media, .card-with-header-below-media-no-btns {
+        width: 80%;
+    }
+
+}
