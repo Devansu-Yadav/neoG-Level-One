@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto,sans-serif;
+}
+
+:root {
+    --white: #fff;
+    --black: #000000;
+    --primary-btn-color: #6200ee;
+    --page-bg-color: #Eaf4fc;
+    --button-hover-color: #E5E4E2;
+    --beige-color: #F5F5DC;
+    --grey: #808080;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+button {
+    border: none;
+    font-size: 1.6rem;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+button:hover {
+    background-color: var(--button-hover-color);
+}
+
+.header-letter-spacing {
+    letter-spacing: 0.0125em;
+}
+
+.text-content-letter-spacing {
+    letter-spacing: 0.0178571429em;
+}
+
+.heading-1 {
+    font-size: 2.8rem;
+    font-weight: 900;
+}
+
+.heading-txt {
+    margin-bottom: 2rem;
+}
+
+.centered-flex-row-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered-flex-col-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.chip-component-box {
+    min-height: 540px;
+    margin: 3rem;
+}
+
+.chip-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    min-height: 200px;
+    background-color: var(--beige-color);
+    border-radius: 3rem;
+    box-shadow: 5px 5px 10px 5px var(--grey);
+}
+
+.chips {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2rem;
+    min-height: 100px;
+}
+
+.chip {
+    padding: 1rem;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    background-color: var(--primary-btn-color);
+    align-self: flex-start;
+    border-radius: 3rem;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.chip-delete {
+    color: var(--white);
+    padding: 0 0.4rem;
+    margin-left: 0.5rem;
+    border-radius: 1.5rem;
+}
+
+.chip-delete:hover {
+    color: var(--black);
+}
+
+.chip-input {
+    padding: 1rem;
+    font-size: 1.7rem;
+    margin: 2rem auto;
+}
