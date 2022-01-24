@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto,sans-serif;
+}
+
+:root {
+    --white: #fff;
+    --black: #000000;
+    --heading-txt-color: #0000008A;
+    --subheading-txt-color: #00000099;
+    --nav-item-txt-color: #000000DE;
+    --nav-item-icon-color: rgba(0,0,0,.6);
+    --nav-item-clicked-txt-icon-color: rgba(98,0,238,.87);
+    --nav-item-clicked-bg-color: #e4d1ff;
+    --nav-item-clicked-bg-hover-color: #ceb1e7;
+    --nav-item-hover-color: #d1d5db;
+    --nav-item-hover-opacity: 0.88;
+    --page-bg-color: #Eaf4fc;
+    --box-shadow-color: #E5E4E2;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--page-bg-color);
+}
+
+.header-letter-spacing {
+    letter-spacing: 0.0125em;
+}
+
+.text-content-letter-spacing {
+    letter-spacing: 0.0178571429em;
+}
+
+.heading-2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.heading-3 {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.heading-6 {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.centered-flex-row-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered-flex-col-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.drawer-container {
+    margin: 2rem;
+    padding: 1rem;
+}
+
+.drawer-component {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 5px 5px 5px var(--box-shadow-color);
+    width: 256px;
+    background-color: var(--white);
+}
+
+.heading {
+    padding: 1rem;
+}
+
+.heading .heading-2 {
+    margin-bottom: 0.5rem;
+}
+
+.heading .heading-6 {
+    color: var(--subheading-txt-color);
+}
+
+.nav-component {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 0;
+}
+
+.drawer-navigation {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 0.5rem 0.5rem 0.7rem;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+.inbox, .star, .sent-mail, .drafts {
+    color: var(--nav-item-icon-color);
+    margin-right: 3.2rem;
+}
+
+.drawer-navigation .drawer-txt {
+    font-size: 1.6rem;
+    color: var(--nav-item-txt-color);
+}
+
+.nav-item-activated {
+    background-color: var(--nav-item-clicked-bg-color);
+}
+
+.nav-item-activated div, .nav-item-activated .drawer-txt {
+    color: var(--nav-item-clicked-txt-icon-color);
+}
+
+.drawer-navigation:hover {
+    background-color: var(--nav-item-hover-color);
+}
+
+.nav-item-activated:hover {
+    background-color: var(--nav-item-clicked-bg-hover-color);
+}
+
+/* -------------------------------> Permanent Drawer Component <------------------------------- */
+.permanent-drawer-container {
+    display: flex;
+    min-width: 400px;
+    max-height: 500px;
+    margin: 3rem;
+    padding: 2rem;
+}
+
+.permanent-drawer-container .drawer-component {
+    align-self: flex-start;
+    justify-content: center;
+    box-shadow: none;
+}
+
+.header-and-content-container {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.header-and-content-container .header {
+    background-color: var(--nav-item-clicked-txt-icon-color);
+    color: var(--page-bg-color);
+    padding: 1.8rem;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.header-and-content-container .content-div {
+    font-size: 2rem;
+    padding: 1rem;
+    overflow-y: scroll;
+}
