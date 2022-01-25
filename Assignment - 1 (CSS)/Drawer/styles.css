@@ -18,6 +18,8 @@
     --nav-item-hover-opacity: 0.88;
     --page-bg-color: #Eaf4fc;
     --box-shadow-color: #E5E4E2;
+    --nav-items-divide-border-color: rgba(0,0,0,.12);
+    --button-hover-color: rgba(141, 78, 230, 0.87);
 }
 
 html {
@@ -26,6 +28,18 @@ html {
 
 body {
     background-color: var(--page-bg-color);
+}
+
+button {
+    border: none;
+    font-size: 1.6rem;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+button:hover {
+    background-color: var(--button-hover-color);
 }
 
 .header-letter-spacing {
@@ -100,7 +114,8 @@ body {
 .drawer-navigation {
     display: flex;
     justify-content: flex-start;
-    margin: 0 0.5rem 0.5rem 0.7rem;
+    align-items: center;
+    margin: 0.8rem;
     text-decoration: none;
     padding: 0.5rem;
 }
@@ -135,7 +150,7 @@ body {
 .permanent-drawer-container {
     display: flex;
     min-width: 400px;
-    max-height: 500px;
+    height: 80vh;
     margin: 3rem;
     padding: 2rem;
 }
@@ -144,18 +159,19 @@ body {
     align-self: flex-start;
     justify-content: center;
     box-shadow: none;
+    height: 100%;
 }
 
 .header-and-content-container {
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 80%;
 }
 
 .header-and-content-container .header {
     background-color: var(--nav-item-clicked-txt-icon-color);
     color: var(--page-bg-color);
-    padding: 1.8rem;
+    padding: 1.5rem;
     font-size: 2rem;
     margin-bottom: 2rem;
 }
@@ -164,4 +180,65 @@ body {
     font-size: 2rem;
     padding: 1rem;
     overflow-y: scroll;
+}
+
+.permanent-drawer-container .nav-component {
+    overflow-y: scroll;
+}
+
+.family, .friends, .work, .settings, .help-feedback {
+    color: var(--nav-item-icon-color);
+    margin-right: 3.2rem;
+}
+
+.divide-nav-items {
+    margin: 0.3rem 0.5rem;
+    border-bottom: 1ps solid var(--nav-items-divide-border-color);
+}
+
+/* -------------------------------------> Dismissible Drawer <------------------------------------------------------- */
+.dismissible-drawer-container {
+    display: flex;
+    min-width: 400px;
+    height: 80vh;
+    margin: 3rem;
+    padding: 2rem;
+}
+
+.dismissible-drawer-container .drawer-component {
+    align-self: flex-start;
+    justify-content: center;
+    box-shadow: none;
+    transition: width 0.1s;
+    height: 100%;
+}
+
+.dismissible-drawer-container .nav-component {
+    overflow-y: scroll;
+}
+
+.dismissible-drawer-container .header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.dismissible-drawer-container .header-and-content-container {
+    width: 100%;
+}
+
+.header .hamburger-menu {
+    color: var(--page-bg-color);
+    padding: 1rem;
+    margin: 0 2.5rem 0 1rem;
+}
+
+.hamburger-menu:hover {
+    border-radius: 50%;
+}
+
+/* Not a great way to implement slide animation for Nav menu :( */
+.disable-sidebar {
+    width: 0;
+    visibility: hidden;
 }
