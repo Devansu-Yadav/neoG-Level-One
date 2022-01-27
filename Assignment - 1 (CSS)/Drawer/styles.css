@@ -242,3 +242,18 @@ button:hover {
     width: 0;
     visibility: hidden;
 }
+
+/* --------------------------> Responsive CSS <-------------------------------------- */
+@media only screen and (max-width: 550px) {
+    .header-and-content-container .content-div {
+        font-size: 1.6rem;
+    }
+
+    .header-and-content-container .header {
+        font-size: 1.8rem;
+    }
+
+    .dismissible-drawer-container, .permanent-drawer-container {
+        min-width: 300px;
+    }    
+}

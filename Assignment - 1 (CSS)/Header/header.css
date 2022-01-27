@@ -54,7 +54,7 @@ button:hover {
 .header-components-container {
     margin: 2rem;
     padding: 1rem;
-    min-width: 600px;
+    min-width: 350px;
     row-gap: 5rem;
 }
 
@@ -247,4 +247,11 @@ button:hover {
 .long-content {
     font-size: 1.6rem;
     padding: 1rem;
+}
+
+/* ----------------------------------> Responsive CSS <------------------------------------------- */
+@media only screen and (max-width: 745px) {
+    .container-header-fixed, .header-prominent-dense, .header-prominent, .header-short, .header-standard, .header-dense {
+        width: 350px;
+    }
 }
