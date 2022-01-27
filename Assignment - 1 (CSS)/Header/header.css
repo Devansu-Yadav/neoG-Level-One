@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto,sans-serif;
+}
+
+:root {
+    --white: #fff;
+    --black: #000000;
+    --header-bg-color: #6200ee;
+    --page-bg-color: #Eaf4fc;
+    --box-shadow-color: #bbbbbb;
+    --button-hover-color: rgba(141, 78, 230, 0.87);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--page-bg-color);
+}
+
+button {
+    border: none;
+    font-size: 1.6rem;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+button:hover {
+    background-color: var(--button-hover-color);
+}
+
+.text-content-letter-spacing {
+    letter-spacing: .0125em;
+}
+
+.centered-flex-row-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered-flex-col-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-components-container {
+    margin: 2rem;
+    padding: 1rem;
+    min-width: 600px;
+    row-gap: 5rem;
+}
+
+/* ------------------------------------> Header Dense Component <----------------------------------- */
+
+.header-dense {
+    display: flex;
+    align-items: center;
+    background-color: var(--header-bg-color);
+    font-size: 2rem;
+    width: 50%;
+    height: 48px;
+    color: var(--white);
+}
+
+.nav-menu-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1 1 auto;
+    margin: 0 0 0 0.4rem;
+}
+
+.hamburger-menu {
+    color: var(--page-bg-color);
+    padding: 1rem;
+    margin: 0 1.5rem 0 0;
+}
+
+.hamburger-menu:hover {
+    border-radius: 50%;
+}
+
+.header-txt {
+    font-weight: 550;
+}
+
+.other-options {
+    margin: 0 1rem;
+}
+
+.download, .print, .bookmark {
+    color: var(--page-bg-color);
+    margin-left: 0.4rem;
+    padding: 1rem;
+}
+
+.other-options button:hover {
+    border-radius: 50%;
+}
+
+/* ------------------------------------> Header Standard Component <----------------------------------- */
+.header-standard {
+    display: flex;
+    align-items: center;
+    background-color: var(--header-bg-color);
+    font-size: 2rem;
+    width: 50%;
+    height: 64px;
+    color: var(--white);
+}
+
+.header-standard .nav-menu-section {
+    margin: 0 1rem;
+}
+
+/* ------------------------------------> Header Short Component <--------------------------------------- */
+.header-short {
+    display: flex;
+    align-items: center;
+    background-color: var(--header-bg-color);
+    font-size: 2rem;
+    width: 50%;
+    height: 56px;
+    color: var(--white);
+}
+
+.header-short .download, .header-short .print {
+    display: none;
+}
+
+/* ------------------------------------> Header Short Always Collapsed Component <--------------------------------------- */
+.header-short-always-collapsed {
+    display: flex;
+    align-items: center;
+    background-color: var(--header-bg-color);
+    font-size: 2rem;
+    width: 112px;
+    color: var(--white);
+    border-bottom-right-radius: 20px;
+    box-shadow: 3px 5px 10px var(--box-shadow-color);
+}
+
+.header-short-always-collapsed .nav-menu-section {
+    flex-grow: 0;
+}
+
+.header-short-always-collapsed .download, .header-short-always-collapsed .print, .header-short-always-collapsed .header-txt {
+    display: none;
+}
+
+.header-short-always-collapsed .hamburger-menu, .header-short-always-collapsed .other-options {
+    margin: 0;
+}
+
+/* -----------------------------------------> Header Prominent <---------------------------------------- */
+.header-prominent {
+    display: flex;
+    align-items: flex-start;
+    background-color: var(--header-bg-color);
+    font-size: 2rem;
+    width: 50%;
+    height: 128px;
+    color: var(--white);
+}
+
+.header-prominent .nav-menu-section {
+    align-items: flex-start;
+    margin: 0rem 1rem;
+    padding-top: 1rem;
+    height: 100%;
+}
+
+.header-prominent .other-options {
+    align-items: flex-start;
+    padding-top: 1rem;
+    height: 100%;
+}
+
+.header-prominent .header-txt {
+    align-self: flex-end;
+    margin-bottom: 2rem;
+}
+
+/* ---------------------------------------> Header Prominent Dense <--------------------------------------------------- */
+.header-prominent-dense {
+    display: flex;
+    align-items: flex-start;
+    background-color: var(--header-bg-color);
+    font-size: 2rem;
+    width: 50%;
+    height: 96px;
+    color: var(--white);
+}
+
+.header-prominent-dense .nav-menu-section {
+    align-items: flex-start;
+    margin: 0rem 1rem;
+    padding-top: 1rem;
+    height: 100%;
+}
+
+.header-prominent-dense .other-options {
+    align-items: flex-start;
+    padding-top: 1rem;
+    height: 100%;
+}
+
+.header-prominent-dense .header-txt {
+    align-self: flex-end;
+    margin-bottom: 2rem;
+}
+
+/* -----------------------------------> Header-Fixed <------------------------------------- */
+.container-header-fixed {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    max-height: 40vh;
+    overflow-y: scroll;
+    position: relative;
+}
+
+.header-fixed {
+    display: flex;
+    align-items: center;
+    background-color: var(--header-bg-color);
+    font-size: 2rem;
+    padding: 1rem;
+    color: var(--white);
+    margin-bottom: 2rem;
+    position: sticky;
+    top: 0;
+}
+
+.header-fixed .nav-menu-section {
+    margin: 0 1rem;
+}
+
+.long-content {
+    font-size: 1.6rem;
+    padding: 1rem;
+}
