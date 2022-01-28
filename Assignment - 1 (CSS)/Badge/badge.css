@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto,sans-serif;
+}
+
+:root {
+    --white: #fff;
+    --black: #000000;
+    --page-bg-color: #Eaf4fc;
+    --badge-bg-color: #4338ca;
+    --badge-on-button-color: #ff4081;
+    --button-hover-color: #8177f7;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--page-bg-color);
+}
+
+button {
+    border: none;
+    font-size: 1.6rem;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.centered-flex-row-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered-flex-col-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.badges-components-container {
+    margin: 2rem;
+    padding: 1rem;
+    min-width: 300px;
+    row-gap: 2rem;
+}
+
+.badge-basic {
+    margin: 1rem;
+    padding: 0.5rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.badge-txt {
+    font-size: 1.8rem;
+}
+
+.badge-box {
+    position: absolute;
+    top: -15%;
+    right: -12%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: whitesmoke;
+    background-color: var(--badge-bg-color);
+    border-radius: 50px;
+}
+
+.badge-bubble {
+    width: 22px;
+    height: 22px;
+    text-align: center;
+}
+
+/* ------------------------------------> Badge Large <------------------------------------ */
+.badge-large {
+    margin: 1rem;
+    padding: 0.5rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.badge-large .badge-box {
+    top: -20%;
+    right: -10%;
+}
+
+.badge-large .badge-bubble {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+/* ---------------------------------------------> Button with badge on left <----------------------------------- */
+.badge-on-btn-left {
+    margin: 1rem;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.badge-on-btn-left .badge-box {
+    margin-left: 0.5rem;
+    position: relative;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+.badge-on-btn-left .badge-bubble {
+    position: absolute;
+    top: -13px;
+    left: -13px;
+    background-color: var(--badge-on-button-color);
+    border-radius: 50%;
+}
+
+.badge-on-btn-left .action-btn {
+    color: var(--white);
+    font-size: 1.8rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--badge-bg-color);
+    border: 0;
+    border-radius: 5px;
+}
+
+.action-btn:hover {
+    background-color: var(--button-hover-color);
+}
+
+/* --------------------------------> Button with badge on right <------------------------------- */
+.badge-on-btn-right {
+    margin: 1rem;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.badge-on-btn-right .badge-box {
+    margin-left: 0.5rem;
+    position: relative;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+.badge-on-btn-right .badge-bubble {
+    position: absolute;
+    top: -13px;
+    right: -13px;
+    background-color: var(--badge-on-button-color);
+    border-radius: 50%;
+}
+
+.badge-on-btn-right .action-btn {
+    color: var(--white);
+    font-size: 1.8rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--badge-bg-color);
+    border: 0;
+    border-radius: 5px;
+}
+
+.hide-badge {
+    visibility: hidden;
+}
+
+.badge-on-btn-right .action-btn:hover {
+    background-color: var(--button-hover-color);
+}
+
+/* -------------------------------------> Icon with badge <---------------------------------- */
+.icon-with-badge .material-icons {
+    color: var(--black);
+}
+
+.icon-with-badge .badge-bubble {
+    top: -11px;
+    right: -12px;
+}
