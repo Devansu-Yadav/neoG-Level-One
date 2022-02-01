@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto,sans-serif;
+}
+
+:root {
+    --white: #fff;
+    --black: #000000;
+    --page-bg-color: #Eaf4fc;
+    --snackbar-bg-color: #333;
+    --box-shadow-color: #9b9b9b;
+    --snackbar-txt-color: hsla(0,0%,100%,.87);
+    --snackbar-option-btn-color: #6200ee;
+    --snackbar-primary-btn-color: #bb86fc;
+    --snackbar-primary-btn-hover-color: rgb(62, 55, 63);
+    --snackbar-secondary-btn-hover-color: rgb(75, 67, 77);
+    --snackbar-btn-hover: #864ada;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--page-bg-color);
+}
+
+button {
+    border: none;
+    font-size: 1.6rem;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.centered-flex-row-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered-flex-col-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.snackbar-toggle-btns {
+    margin: 1rem;
+    padding: 1rem;
+    column-gap: 2rem; 
+}
+
+.snackbar-toggle-btns button {
+    color: var(--snackbar-txt-color);
+    padding: 1rem 1.5rem;
+    font-size: 1.6rem;
+    background-color: var(--snackbar-option-btn-color);
+    border-radius: 7px;
+}
+
+.snackbar-toggle-btns button:hover {
+    background-color: var(--snackbar-btn-hover);
+    box-shadow: 2px 3px 5px var(--box-shadow-color);
+}
+
+.snackbar-container {
+    padding: 1rem;
+    margin: 1rem auto;
+    font-size: 1.5rem;
+}
+
+/* ---------------------------------> SnackBar Baseline <---------------------------------------- */
+.snackbar-baseline {
+    width: 400px;
+    column-gap: 2rem;
+    background-color: var(--snackbar-bg-color);
+    padding: 1rem;
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+#snackbar-content, .btn-secondary {
+    color: var(--snackbar-txt-color);
+    padding: 0.5rem 1rem;
+}
+
+.btn-primary {
+    color: var(--snackbar-primary-btn-color);
+    padding: 0.5rem 0.3rem;
+}
+
+.btn-primary:hover {
+    background-color: var(--snackbar-primary-btn-hover-color);
+    border-radius: 5px;
+}
+
+.btn-secondary {
+    width: 30px;
+    height: 30px;
+}
+
+.btn-secondary:hover {
+    background-color: var(--snackbar-secondary-btn-hover-color);
+    border-radius: 50%;
+}
+
+/* -------------------------------------> SnackBar Leading <------------------------------------ */
+.snackbar-leading {
+    width: 350px;
+    column-gap: 2rem;
+    background-color: var(--snackbar-bg-color);
+    padding: 1rem;
+    position: fixed;
+    bottom: 30px;
+    left: 0;
+    margin-left: 1rem;
+    border-radius: 5px;
+}
+
+/* -------------------------------------> SnackBar Stacked <------------------------------------- */
+.snackbar-stacked {
+    width: 451px;
+    background-color: var(--snackbar-bg-color);
+    padding: 1rem;
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+.snackbar-stacked .snackbar-btns {
+    margin-top: 1rem;
+    align-self: flex-end;
+}
+
+.snackbar-stacked .snackbar-btns .btn-secondary {
+    margin-left: 1.5rem;
+}
+
+.snackbar-no-display {
+    display: none;
+}
+
+/* ------------------------------> Responsive CSS <--------------------------------------- */
+@media only screen and (max-width: 470px) {
+    .snackbar-stacked {
+        width: 95%;
+    }
+
+    .snackbar-leading, .snackbar-baseline {
+        width: 85%;
+    }
+}

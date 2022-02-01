@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snackbar Component</title>
+    <link rel="stylesheet" href="snackbar.css">
+</head>
+<body>
+    <main class="snackbar-toggle-btns centered-flex-row-container">
+        <button class="baseline-btn">Baseline</button>
+        <button class="leading-btn">Leading</button>
+        <button class="stacked-btn">Stacked</button>
+    </main>
+
+    <section class="snackbar-container centered-flex-col-container">
+        <!-- Baseline Snackbar comp -->
+        <div class="snackbar-baseline centered-flex-row-container snackbar-no-display">
+            <p id="snackbar-content">Can't send photo. Retry in 5 seconds.</p>
+            <button class="btn-primary">RETRY</button>
+            <button class="btn-secondary centered-flex-row-container">X</button>
+        </div>
+
+        <!-- Snackbar Leading -->
+        <div class="snackbar-leading centered-flex-row-container snackbar-no-display">
+            <p id="snackbar-content">Your photo has been archived.</p>
+            <button class="btn-primary">UNDO</button>
+            <button class="btn-secondary">X</button>
+        </div>
+
+        <!-- Snackbar Stacked -->
+        <div class="snackbar-stacked centered-flex-col-container snackbar-no-display">
+            <p id="snackbar-content">This item already has the label "travel". You can add a new label.</p>
+            <div class="snackbar-btns">
+                <button class="btn-primary">ADD A NEW LABEL</button>
+                <button class="btn-secondary">X</button>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="snackbar.js"></script>
+</body>
+</html>
