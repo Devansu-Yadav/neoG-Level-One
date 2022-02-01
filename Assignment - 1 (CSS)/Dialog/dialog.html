@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialog Component</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="dialog.css"/>
+</head>
+<body>
+    <main class="dialog-container centered-flex-row-container">
+        <!-- Alert Dialog -->
+        <div class="alert-dialog centered-flex-col-container">
+            <h2 class="heading-2">Dialog Header</h2>
+            <p class="dialog-txt">
+                Dialog body Text
+                <br>
+                <br>
+            </p>
+            <div class="dialog-actions">
+                <div class="action-btns centered-flex-row-container">
+                    <button id="action-btn-1">ACTION 1</button>
+                    <button id="action-btn-2">ACTION 2</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dialog Simple -->
+        <div class="simple-dialog centered-flex-col-container">
+            <h2 class="heading-2">Dialog Header</h2>
+            <p class="dialog-txt">
+                Dialog body Text
+                <br>
+                <br>
+            </p>
+
+            <ul class="list-items">
+                <li class="item centered-flex-row-container">
+                    <i class="material-icons material-icons-outlined">account_circle</i>
+                    <span class="item-txt">Item 1</span>
+                </li>
+                <li class="item centered-flex-row-container">
+                    <i class="material-icons material-icons-outlined">account_circle</i>
+                    <span class="item-txt">Item 2</span>
+                </li>
+                <li class="item centered-flex-row-container">
+                    <i class="material-icons material-icons-outlined">account_circle</i>
+                    <span class="item-txt">Item 3</span>
+                </li>
+            </ul>
+
+            <div class="dialog-actions">
+                <div class="action-btns centered-flex-row-container">
+                    <button id="action-btn-1">ACTION 1</button>
+                    <button id="action-btn-2">ACTION 2</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Confirmation Dialog -->
+        <div class="confirm-dialog centered-flex-col-container">
+            <h2 class="heading-2">Dialog Header</h2>
+            <p class="dialog-txt">
+                Dialog body Text
+                <br>
+                <br>
+            </p>
+            <ul class="list-items">
+                <li class="item centered-flex-row-container">
+                    <input type="radio" id="opt-1" name="options" value="opt-1"/>
+                    <label for="opt-1" class="item-txt">Item 1</label>
+                </li>
+                <li class="item centered-flex-row-container">
+                    <input type="radio" id="opt-2" name="options" value="opt-2"/>
+                    <label for="opt-2" class="item-txt">Item 2</label>
+                </li>
+                <li class="item centered-flex-row-container">
+                    <input type="radio" id="opt-3" name="options" value="opt-3"/>
+                    <label for="opt-3" class="item-txt">Item 3</label>
+                </li>
+                <li class="item centered-flex-row-container">
+                    <input type="radio" id="opt-4" name="options" value="opt-4"/>
+                    <label for="opt-4" class="item-txt">Item 4</label>
+                </li>
+            </ul>
+
+            <div class="dialog-actions">
+                <div class="action-btns centered-flex-row-container">
+                    <button id="action-btn-1">ACTION 1</button>
+                    <button id="action-btn-2">ACTION 2</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto,sans-serif;
+}
+
+:root {
+    --white: #fff;
+    --black: #000000;
+    --heading-color-txt: rgba(0,0,0,.87);
+    --dialog-txt-color: #0000008A;
+    --box-shadow-color: #333333;
+    --simple-dialog-item-txt-color: #000000DE;
+    --action-btns-color: #6200ee;
+    --confirm-dialog-border-color: rgba(0,0,0,.12);
+    --container-bg-color: #999999;
+    --button-hover-color: lightgrey;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+button {
+    border: none;
+    font-size: 1.6rem;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.heading-2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.centered-flex-row-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered-flex-col-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dialog-container {
+    column-gap: 6rem;
+    padding: 1rem;
+    margin: 2rem;
+    height: 500px;
+    font-size: 1.7rem;
+    background-color: var(--container-bg-color);
+}
+
+.alert-dialog {
+    align-items: flex-start;
+    padding: 1rem;
+    width: 240px;
+    max-height: 360px;
+    background-color: var(--white);
+    box-shadow: 2px 5px 10px var(--box-shadow-color);
+    border-radius: 5px;
+}
+
+.heading-2 {
+    margin: 1rem;
+    color: var(--heading-color-txt);
+}
+
+.dialog-txt {
+    font-size: 1.6rem;
+    width: 100%;
+    color: var(--dialog-txt-color);
+    margin: 1rem;
+}
+
+.dialog-actions {
+    margin-left: auto;
+}
+
+.action-btns {
+    padding: 0 1rem;
+    column-gap: 1.5rem;
+}
+
+.action-btns button {
+    color: var(--action-btns-color);
+    padding: 1rem 0.5rem;
+}
+
+.action-btns button:hover {
+    border-radius: 5px;
+    background-color: var(--button-hover-color);
+}
+
+/* ----------------------------------> Dialog Simple <----------------------------------------- */
+.simple-dialog {
+    align-items: flex-start;
+    padding: 1.5rem 1.5rem 1rem 1.5rem;
+    width: 240px;
+    max-height: 360px;
+    background-color: var(--white);
+    box-shadow: 2px 5px 10px var(--box-shadow-color);
+    border-radius: 5px;
+}
+
+.simple-dialog .dialog-txt {
+    display: none;
+}
+
+.simple-dialog .dialog-actions {
+    display: none;
+}
+
+.simple-dialog .list-items {
+    padding: 1rem 0;
+    font-size: 1.8rem;
+    width: 100%;
+}
+
+.simple-dialog li {
+    list-style: none;
+}
+
+.list-items .item {
+    justify-content: flex-start;
+    padding: 1rem;
+}
+
+.item i {
+    font-size: 4rem;
+}
+
+.item-txt {
+    color: var(--simple-dialog-item-txt-color);
+    margin-left: 1rem;
+}
+
+.simple-dialog .item:hover {
+    background-color: var(--button-hover-color);
+    border-radius: 5px;
+}
+
+/* --------------------------------------------> Confirmation Dialog <---------------------------------------------------------- */
+.confirm-dialog {
+    align-items: flex-start;
+    padding: 1.5rem 1.5rem 1rem 1.5rem;
+    width: 240px;
+    max-height: 250px;
+    background-color: var(--white);
+    box-shadow: 2px 5px 10px var(--box-shadow-color);
+    border-radius: 5px;
+}
+
+.confirm-dialog .dialog-txt {
+    display: none;
+}
+
+.confirm-dialog .list-items {
+    border-top: 1px solid var(--confirm-dialog-border-color);
+    border-bottom: 1px solid var(--confirm-dialog-border-color);
+    overflow-y: scroll;
+    margin: 1rem 0.5rem;
+    padding: 1rem 0;
+    font-size: 1.4rem;
+    width: 100%;
+}
+
+.confirm-dialog li {
+    list-style: none;
+}
+
+.item input {
+    width: 2rem;
+    height: 2rem;
+}
+
+.confirm-dialog .item-txt {
+    margin-left: 1.5rem;
+}
+
+.confirm-dialog .action-btns {
+    padding: 0;
+}
