@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto,sans-serif;
+}
+
+:root {
+    --white: #fff;
+    --black: #000000;
+    --box-shadow-color: #333333;
+    --tabs-txt-color: rgba(0,0,0,.6);
+    --primary-color: #6200ee;
+    --focus-txt-color: #864ada;
+    --focus-bg-color: #ddc5ff;
+    --container-bg-color: #e2e8f0;
+    --button-hover-color: lightgrey;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+button {
+    border: none;
+    font-size: 1.6rem;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.centered-flex-row-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered-flex-col-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabs-container {
+    align-items: flex-start;
+    row-gap: 3rem;
+    padding: 1rem;
+    margin: 2rem;
+    background-color: var(--container-bg-color);
+}
+
+.tab {
+    max-height: 80px;
+}
+
+.tabs-fixed {
+    width: 100%;
+}
+
+.tabs-scroll {
+    width: 60%;
+}
+
+.tabs-scroll .tabs {
+    overflow-x: scroll;
+}
+
+.tabs-scroll .tab {
+    flex-shrink: 0;
+}
+
+/* -------------------------------> Tabs No Icon Fixed <--------------------------------------------- */
+.tabs {
+    justify-content: flex-start;
+    border: 1px solid var(--black);
+}
+
+.tab {
+    flex-grow: 1;
+    padding: 2rem 1rem;
+}
+
+.tabs-no-icons-fixed .tab i {
+    display: none;
+}
+
+.tab:hover {
+    background-color: var(--button-hover-color);
+}
+
+.tab:focus {
+    border-bottom: 2px solid var(--primary-color);
+    background-color: var(--focus-bg-color);
+}
+
+.tab-txt {
+    color: var(--tabs-txt-color);
+}
+
+.tab:focus .tab-txt {
+    color: var(--primary-color);
+}
+
+/* -----------------------------------------> Tabs Scrollable No Icons <--------------------------- */
+.tabs-no-icons-scroll .tab i {
+    display: none;
+}
+
+/* ---------------------------------------> Tabs With Leading Icon Fixed <---------------------------- */
+.tabs-leading-icons-fixed .tab {
+    column-gap: 1rem;
+}
+
+.tabs-leading-icons-fixed .tab:focus i {
+    color: var(--primary-color);
+}
+
+/* ----------------------------------> Tabs With Leading Icons Scroll <--------------------------------- */
+.tabs-leading-icons-scroll .tab {
+    column-gap: 1rem;
+}
+
+.tabs-leading-icons-scroll .tab:focus i {
+    color: var(--primary-color);
+}
+
+/* ----------------------------------> Tabs With Top Icon Fixed <------------------------------------  */
+.tabs-top-icon-fixed .tab {
+    row-gap: 1rem;
+}
+
+.tabs-top-icon-fixed .tab:focus i {
+    color: var(--primary-color);
+}
+
+/* --------------------------------> Tabs With Top Icon Scroll <--------------------------------- */
+.tabs-top-icon-scroll .tab {
+    row-gap: 1rem;
+}
+
+.tabs-top-icon-scroll .tab:focus i {
+    color: var(--primary-color);
+}
