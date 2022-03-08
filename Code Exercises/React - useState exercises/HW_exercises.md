@@ -19,3 +19,9 @@ Q8. switch tabs - ![CodeSandbox Link](https://codesandbox.io/s/switch-tabs-uiy6z
 Q9. toast - ![CodeSandbox Link](https://codesandbox.io/s/toast-component-bg381j?file=/src/Toast.js)
 
 Q10. todo/strikethrough - ![CodeSandbox Link](https://codesandbox.io/s/todo-app-j2viw3?file=/src/App.js)
+
+Q11. dark mode - ![CodeSandbox Link](https://codesandbox.io/s/dark-mode-usestate-rbtuqh)
+
+Q12. like in a list - ![CodeSandbox Link](https://codesandbox.io/s/like-in-a-list-e14kxb?file=/src/App.jsx)
+
+Q13. out of stock (grey) - ![CodeSandbox Link](https://codesandbox.io/s/out-of-stock-grey-kukm1e?file=/src/App.jsx)
